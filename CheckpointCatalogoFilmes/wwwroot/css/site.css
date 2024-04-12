@@ -1,0 +1,85 @@
+body {
+    padding: 2rem;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.header-texts{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.filme-detalhe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: dashed;
+}
+
+
+
+.filme-detalhe > a > img {
+        height: 60vh;
+        
+}
+
+.filme-detalhe  > p {
+    padding-top: 10px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.pagina-detalhe-filme {
+    display: flex;
+    height: 100vh;
+    
+}
+
+.pagina-detalhe-filme > img {
+    height: 80vh;
+}
+
+.infos-filme > h3 {
+    text-align: center;
+}
+
+.infos-filme > p {
+    text-align: justify;
+    padding: 4rem;
+    
+}
+
+@media (max-width: 1500px) {
+    .grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 1200px) {
+    .grid {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+
+  

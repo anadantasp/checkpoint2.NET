@@ -1,0 +1,24 @@
+﻿@model IEnumerable<CheckpointCatalogoFilmes.Models.FilmeViewModel>
+
+
+  <div class="index-page">
+
+    <div class="header-texts">
+        <h2>Indicados a categoria de melhor filme Oscar 2024</h2>
+    </div>
+
+    <div class="grid">
+        @foreach (var filme in Model)
+        {
+            <div class="filme-detalhe">
+                <a asp-action="Details" asp-route-id="@filme.Id">
+                    <img src="@filme.ImagemUrl" alt="Image of @filme.Titulo" />
+                </a>
+                <p>@filme.Titulo</p>
+            </div>
+        }
+    </div>
+
+  </div>  
+    
+
